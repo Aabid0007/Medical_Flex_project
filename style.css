@@ -27,9 +27,9 @@ header{
     gap: 8px;
     color: #fff;
 }
-.close span{
+/* .close span{
     display: block;
-}
+} */
 nav{ 
     padding: 20px 0; 
 }

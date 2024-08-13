@@ -1,0 +1,292 @@
+/* first_break_point */
+.checkbox{
+    display: none;
+}
+.close span{
+    display: none;
+}
+.header_actions{
+    display: none;
+}
+@media only screen and (max-width:1024px) {
+    .banner_image{
+        display: none;
+    }
+    .btn{
+        padding: 14px 14px;
+    }
+    .header_action{
+        margin: 0;
+    } 
+    #hamburger_menu{
+        display: none;
+    }
+    .content_area_image{
+        flex: 1;
+    }
+    .content_area_content{
+        flex: 1;
+    }
+    .content_area_content p{
+        max-width: initial;
+    }
+    .advice_intro p{
+        max-width: initial;
+    }
+    .advice_into p{
+        max-width: initial;
+    }
+    .cards_main{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        display: flex;
+        align-items: center;   
+    }
+    .product_action{
+        object-fit: cover;
+    }
+    .subscription_cards_main{
+        grid-template-columns:1fr;
+    }
+    .new_icon{
+        display: none;
+    }
+    .subscription_card p{
+        max-width: 100%;
+    }
+    .partnerships_flex{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 8px;
+      } 
+    .footer_content{
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px
+    }
+}
+/* second_break_point */
+@media only screen and (max-width:767px) {
+    header{
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        height: 70px;
+    }
+    nav{
+        padding: 16px 0;
+    }
+    .navbar_menu{
+        position: initial;
+        display: none;
+    }
+    .nav_list ul{
+        position: fixed;
+        top: 70px;
+        right: 100%;
+        background-color:#26335D;
+        height: calc(100vh - 100px);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transition: all 400ms;
+        overflow: auto;
+        padding-bottom: 40px
+    }
+    #hamburger_menu:checked ~ .nav_list ul{
+        right: 0;
+    }
+    .site_banner{
+        padding-top: 70px;
+    }
+    .nav_list ul li{
+        padding: 6px 15px;
+    }
+    .nav_list ul :hover{
+        color:#c4bfbc;
+    }
+    .navbar_menu a:hover{
+        color: #fff;
+    }
+    .nav_list{
+       margin: 0;
+    }
+    .header_actions{
+       display: block;
+    }
+    .none_btn{
+        display: none;
+    }
+    .close span{
+        display: block;
+    }
+    .btns{
+        background-color: transparent;
+        border:1px solid #1BA0AB;
+        border-radius: 5px;
+        padding: 14px 24px;
+    }
+    .banner_content h5{
+        font-size: 12px;
+    }
+    .banner_content h1{
+        font-size:32px ;
+    }
+    .banner_content  h4{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 12px;
+        padding: 13px 13px;
+    }
+    .filled_btn i{
+        font-size: 18px;
+    }
+    .content_area_content{
+        gap: 13px;
+    }
+    .content_area_content h2{
+        font-size: 22px;
+    }
+    .content_area_content p{
+        max-width: 100%;
+        font-size: 13px;
+    }
+    .content_area_content::before{
+        width: 75px;
+        height: 6px;
+    }
+    .learn_more a{
+        font-size: 13px;
+        gap: 1px;
+    }
+    .learn_more a i{
+        font-size: 20px;
+    }
+    .partnerships_flex img{
+        width: 80%;
+    }
+    .advice_intro h6{
+        font-size: 11px;
+    }
+    .advice_intro h2{
+        font-size: 30px;
+    }
+    .advice_intro p{
+        max-width: 100%;
+        font-size: 13px;
+    }
+    .cards_main{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        display: block;
+    }
+    .cards_contant p{
+        max-width: 100%;
+        font-size: 13px;
+    }
+    .subscription_cards_main{
+        grid-template-columns:1fr;
+    } 
+    .advice_into h6{
+        font-size: 11px;
+    }
+    .advice_into h2{
+        font-size: 30px;
+    }
+    .advice_into p{
+        max-width: 100%;
+        font-size: 13px;
+    }
+    .review_cards{
+        grid-template-columns: 1fr;
+    }
+    .review_caption p{
+        font-size: 13px;
+    }
+    .join_action{
+        padding: 13px 23px;
+        font-size: 13px;
+    }
+    .email_span{
+        padding: 13px;
+        font-size: 13px;
+    }
+    .footer_content{
+        grid-template-columns: 1fr;
+    }
+    .information_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .content_area_image{
+        display: none;
+    }
+}
+ /* third_break_point */
+@media only screen and (max-width:420px) {
+    .btn{
+        padding: 9px 9px;  
+    }
+    .learn_more a{
+        font-size: 11px;
+    }
+    .logo h3{
+        font-size: 15px;
+    }
+    .join_action{
+        padding: 11px 21px;
+        font-size: 11px;
+    }
+    .cards_contant h5{
+        font-size: 15px;
+    }
+    .content_area_content p{
+        font-size: 11px;
+    }
+    .cards_details{
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .subscription_card p{
+        font-size: 13px;
+    }
+    .sub_plan_details h6{
+        font-size: 12px;
+        max-width: 171px; 
+    }
+    .tick{
+        padding: 2px 4px;
+    }
+    .advice_into h2{
+        font-size: 27px;
+    }
+    .reviewed_by h6{
+        font-size: 13px;
+    }
+    .email_span{
+        padding: 11px;
+        font-size: 11px;
+    }
+    .footer_content h5{
+        font-size: 14px;
+    }
+    .footer_content ul li a{
+        font-size: 10px;
+    }
+    .card_contact{
+        width: 223px;
+    }
+    .information_content h6{
+        font-size: 10px;
+    }
+    .social_link_action{
+        font-size: 20px;
+        gap: 10px;
+    } 
+}

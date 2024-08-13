@@ -93,8 +93,15 @@
         overflow: auto;
         padding-bottom: 40px
     }
+    
     #hamburger_menu:checked ~ .nav_list ul{
         right: 0;
+    }
+    .checkbox:checked ~ .close .menu-icon {
+        display: none;
+    }
+    .checkbox:checked ~ .close .close-icon {
+        display: inline;
     }
     .site_banner{
         padding-top: 70px;
@@ -117,7 +124,7 @@
     .none_btn{
         display: none;
     }
-    .close span{
+    .close .menu-icon{
         display: block;
     }
     .btns{
